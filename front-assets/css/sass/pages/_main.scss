@@ -1,0 +1,136 @@
+// All Rest
+* {
+  @include all-reset;
+}
+// a Reset
+a {
+  @include a-reset;
+}
+// reset btn
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+// main-section
+.main-section {
+  padding: 1.5rem 0;
+  min-height: calc(100vh - 41.88px - 54.5px - 69px);
+}
+// Modal
+.modal-header {
+  .modal-title {
+    font-size: 15px !important;
+  }
+  .btn-close {
+    margin: unset !important;
+  }
+}
+// Start Show User
+.tab-pane {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+// ENd Show User
+.side-profile {
+  .avatar {
+    padding: 20px;
+    box-shadow: 0 0 10px #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      padding: 10px;
+      border: 3px dotted $main-color;
+    }
+  }
+  .title-name {
+    padding: 10px 12px;
+    margin: 30px 0;
+    background-color: $main-color;
+    .name {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+  .taps-control {
+    padding: 10px 0;
+    box-shadow: 0 0 10px #ddd;
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      .main-tap {
+        padding: 5px 10px;
+        .icon {
+          color: $main-color;
+        }
+        a {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        &:hover {
+          background-color: $main-color;
+          a {
+            color: #fff;
+          }
+          .icon {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.main-head {
+  box-shadow: 0 0 10px #ddd;
+  border-right: 8px solid $main-color;
+  padding: 5px;
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+}
+.form-btn {
+  width: 100%;
+  background-color: $main-color;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  margin-top: 20px;
+  background-image: url(../images/bg-read.png);
+}
+.main-box {
+  box-shadow: 0 0 10px #ddd;
+  margin-top: 16px;
+  background-color: #fff;
+  padding: 20px;
+}
+.main-head {
+  font-size: 30px;
+  color: #333;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  .icon {
+    color: $main-color;
+  }
+}
+.main-head2 {
+  color: #24343f;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 24px;
+}
